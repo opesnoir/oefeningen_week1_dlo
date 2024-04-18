@@ -29,7 +29,7 @@ public class leeftijdBerekening {
         System.out.println("Wat is je geboortejaar?");
         birthYearInput = input.nextInt(); //gebruikers input ophalen met scanner [input], vervolgens opslaan in variabel [birthYearInput]
         calculatedAge = returnAge(birthYearInput); //functie[returnage] aanroepen en gebruikersinput [birthyearinput] meegeven, de return opslaan [calculatedAge] om elders te gebruiken
-        System.out.println("Beste " + nameInput + ", je leeftijd is: " + calculatedAge);
+        System.out.println("Beste " + nameInput + " geboren in het jaar " + birthYearInput + ", je leeftijd is: " + calculatedAge);
 
     }
 }
