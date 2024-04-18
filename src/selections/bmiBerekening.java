@@ -16,6 +16,12 @@ public class bmiBerekening {
         return gewichtInput / (lengteInMeters*lengteInMeters);
     }
 
+    //functie bmi conclusie
+    public static void messageBmiHealth(double uitkomstBmi){
+        if (uitkomstBmi < 25){
+            System.out.println("Je bent goed op gewicht.");
+        } else System.out.println("Je bent te zwaar.");
+    }
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
@@ -29,9 +35,7 @@ public class bmiBerekening {
         gewichtInput = input.nextDouble();
         uitkomstBmi = bmiBerekenen(lengteInput,gewichtInput);
         System.out.println("Jouw BMI is: " + uitkomstBmi);
-        if (uitkomstBmi < 25){
-            System.out.println("Je bent goed op gewicht.");
-        } else System.out.println("Je bent te zwaar.");
+        messageBmiHealth(uitkomstBmi);
 
     }
 }
