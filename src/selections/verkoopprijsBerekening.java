@@ -31,6 +31,8 @@ default -> System.out.println("Ongeldige keus, kies 1 of 2.");
             default:
                 System.out.println("Ongeldige keus, kies 1 of 2.");
         }*/
+// escape sequenties en hun betekenissen: \n = new line en \t = horizontale tab
+
 //naam: M. Ci
 
 import java.util.Scanner;
@@ -45,6 +47,11 @@ public class verkoopprijsBerekening {
         System.out.println("      1 Hoog");
         System.out.println("      2 Laag");
         System.out.println("Geef je keuze: ");
+
+        // Schrijfstijl uit het antwoordmodel van school:
+        // System.out.print("Onder welk BTW-tarief valt het product?\n \t1 Hoog \n\t2 Laag\n");
+        // escape sequenties en hun betekenissen: \n = new line en \t = horizontale tab
+
     }
     public static void verkoopprijsInclusiefBtw(int btwKeuze, double berekendeVerkoopprijs) {
         //variabelen
