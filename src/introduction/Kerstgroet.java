@@ -1,4 +1,4 @@
-package loops;
+package introduction;
 
 // Dit programma toont een kerstgroet.
 // Naam: M. Ci
