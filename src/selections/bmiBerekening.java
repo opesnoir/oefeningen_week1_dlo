@@ -17,7 +17,7 @@ public class bmiBerekening {
     }
 
     //functie bmi conclusie
-    public static void messageBmiHealth(double uitkomstBmi){
+    public static void bmiConclusie(double uitkomstBmi){
         if (uitkomstBmi < 25){
             System.out.println("Je bent goed op gewicht.");
         } else System.out.println("Je bent te zwaar.");
@@ -35,7 +35,7 @@ public class bmiBerekening {
         gewichtInput = input.nextDouble();
         uitkomstBmi = bmiBerekenen(lengteInput,gewichtInput);
         System.out.println("Jouw BMI is: " + uitkomstBmi);
-        messageBmiHealth(uitkomstBmi);
+        bmiConclusie(uitkomstBmi);
 
     }
 }
